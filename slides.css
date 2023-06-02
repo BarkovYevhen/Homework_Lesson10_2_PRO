@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #f1f1f1;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.slider {
+    width: 640px;
+    height: 360px;
+    border: 2px solid black;
+    margin: 30px auto;
+    overflow: hidden;
+    grid-column: 2 / 3;
+}
+
+.slider-line {
+    height: 360px;
+    width: 2560px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+img {
+    width: 640px;
+}
+
+button {
+    height: 30px;
+    width: 60px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(64, 121, 191);
+}
