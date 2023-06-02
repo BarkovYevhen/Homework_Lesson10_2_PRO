@@ -1,4 +1,4 @@
-let offset = 0; //зміщення від лівого краю
+let offset = 0;
 const sliderLine = document.querySelector(".slider-line");
 const sliderNextBtn = document.querySelector(".slider-next");
 const sliderPrevBtn = document.querySelector(".slider-prev");
@@ -17,7 +17,7 @@ document.querySelector(".slider-prev").addEventListener("click", function () {
   offset -= 640;
   if (offset < 0) {
     offset = 0;
-    sliderPrevBtn.style.display = "none"; // ховаємо кнопку "Prev"
+    sliderPrevBtn.style.display = "none";
   }
   sliderLine.style.left = -offset + "px";
   sliderNextBtn.style.display = "block";
