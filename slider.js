@@ -3,7 +3,7 @@ const sliderLine = document.querySelector(".slider-line");
 const sliderNextBtn = document.querySelector(".slider-next");
 const sliderPrevBtn = document.querySelector(".slider-prev");
 
-document.querySelector(".slider-next").addEventListener("click", function () {
+sliderNextBtn.addEventListener("click", function () {
   offset += 640;
   if (offset > 1920) {
     offset = 1920;
@@ -13,7 +13,7 @@ document.querySelector(".slider-next").addEventListener("click", function () {
   sliderPrevBtn.style.display = "block";
 });
 
-document.querySelector(".slider-prev").addEventListener("click", function () {
+sliderPrevBtn.addEventListener("click", function () {
   offset -= 640;
   if (offset < 0) {
     offset = 0;
